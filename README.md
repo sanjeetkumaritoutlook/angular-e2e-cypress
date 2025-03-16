@@ -14,7 +14,23 @@ npx cypress open
 
 (it automatically picks cy.ts files from cypress/e2e folder)
 
+You can skip a specific test file like this:
+
+npx cypress run --exclude 'cypress/e2e/user-grid.cy.ts'
+
+directly run a file:
+
+npx cypress run --spec 'cypress/e2e/home.cy.ts'
+
+
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## What specPattern does:
+
+It tells Cypress to look for test files that match this pattern:
+
+cypress/e2e/**/*.cy.{js,ts}
+
 
 
 ## Code scaffolding
