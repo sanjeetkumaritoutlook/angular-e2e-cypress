@@ -11,10 +11,12 @@ npx @angular/cli@17 new my-app
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Running end-to-end tests
-
+before running below commands, keep angular application runnning in another tab using: npm start
+```
 npm run e2e 
 
 npx cypress open
+```
 
 (it automatically picks cy.ts files from cypress/e2e folder)
 
@@ -28,6 +30,8 @@ npx cypress run --spec 'cypress/e2e/home.cy.ts'
 
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+![Angular e2e options](e2eoptions.png)
 
 ## What specPattern does:
 
